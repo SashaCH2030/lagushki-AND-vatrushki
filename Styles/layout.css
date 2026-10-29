@@ -413,18 +413,21 @@ a {
 }
 
 .hidden {
+  display: flex;
   position: absolute;
-  top: -1000px;
+  top: -500px;
   left: 0;
   opacity: 0;
   transition: opacity 0.5s ease, visibility 0.3s ease;
-  width: 2080px;
-  height: 1495px;
+  width: 1880px;
+  height: 1195px;
   background-color: var(--white);
   border-radius: 117px;
   z-index: 10;
   box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+  justify-content: center;
 }
+
 
 .sale_button:hover + .hidden {
   opacity: 1;
