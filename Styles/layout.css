@@ -20,3 +20,12 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.fivepage {
+    background-image: url('../img/waves.svg');
+    background-position: 0 0;
+    height: 1341px;
+    width: 2722px;
+    margin: 0;
+    padding: 0;
+}
