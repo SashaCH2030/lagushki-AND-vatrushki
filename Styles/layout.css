@@ -1,74 +1,320 @@
+:root {
+  --red: #EC5151;
+  --white: #F7F8ED;
+  --green: #80A565;
+  --blue: #ABD8F0;
+
+}
+
 body {
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--white);
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 700;
+  font-size: 36px;
+  overflow-x: hidden; 
+  max-width: 2560px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 140px;
+}
+h2 {
+  font-size: 80px;
+}
+h3 {
+  font-size: 68px;
+}
+h4 {
+  font-size: 48px;
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-.firstpage {
-    background-image: url('../img/bulki2.svg');
-    /* background-position: 0 0; */
-    /* height: 1341px;
-    width: 2560px; */
-    margin: 0;
-    padding: 0;
+a {
+  text-decoration: none;
 }
 
+/* навигация */
+.header_wrap {
+  padding: 44px 0;
+  background-color: var(--white);
+}
+
+.nav_wrap {
+  max-width: 2560px;
+  margin-inline: auto;
+}
+
+.navig {
+  padding: 0 103px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navig_list {
+  display: flex;
+  gap: 43px;
+}
+
+.navig_a {
+  color: var(--red);
+  
+}
+
+.navig_a:hover {
+  font-size: 42px;
+  transition: 0.5s;
+}
+
+/* первый блок */
+.hero {
+  display: flex;
+  background-color: var(--white);
+  height: 1203px;
+  background-image: url('../img/bulki.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0 103px;
+  display: flex;
+  align-items: center; 
+  z-index: 5;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  gap: 438px;
+  max-width: 785px;
+  
+}
+
+.hero_text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: var(--white);
+  z-index: 10;
+  gap: 24px;
+}
+
+.hero_button {
+  display: flex;
+  width: 770px;
+  height: 197px;
+  background-image: url('../img/blue\ batton.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: var(--white);
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_button_a {
+  display: block;
+  color: var(--white);
+  font-size: 68px;
+}
+
+.red_star {
+  position: absolute;
+  height: 1203px;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.blue_star {
+  position: absolute;
+  height: 1203px;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.first_frog {
+  position: absolute;
+  height: 621px;
+  bottom: 0;
+  right: 157px;
+  z-index: 3;
+}
+
+/*второй блок */
+.about {
+  display: flex;
+  background-color: var(--white);
+  height: 985px;
+  background-image: url('../img/stars\ red.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding:  0 103px;
+  display: flex;
+  align-items: center; 
+  justify-content: right;
+  z-index: 5;
+}
+
+.about_content {
+  display: flex;
+  gap: 427px;
+  max-width: 2560px;
+  align-items: center;
+}
+
+.about_text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: var(--white);
+  z-index: 10;
+  width: 769px;
+  height: 592px;
+  background-image: url('../img/blue\ frame.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_text_p {
+  width: 624px;
+  height: auto;
+}
+
+/* третий блок */
+.menu {
+  display: flex;
+  background-color: var(--white);
+  height: 1794px;
+}
+
+.menu_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding:  0 300px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  z-index: 5;
+}
+
+.menu_content {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  max-width: 1953px;
+  align-items: center;
+}
+
+.menu_row {
+  display: flex;
+}
+
+.menu_food {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: var(--white);
+  z-index: 10;
+  width: 615px;
+  height: 660px;
+  background-image: url('../img/small\ blue\ frame.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.menu_name {
+  display: flex;
+  background: var(--white);
+  border-radius: 32px;
+  color: var(--red);
+  width: 448px;
+  height: 89px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* четвёртый блок */
 .fourpage {
+    position: relative; 
     background-image: url('../img/waves.svg');
-    background-position: 0 0;
     height: 2722px;
-    width: 2560px;
+    width: 100%;
+    max-width: 2560px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
 }
 
 .secondpage {
-  background-color: #F7F8ED;
-  height: 985px;
-  width: 2560px;
-  margin: 0;
-  padding: 0;
-
+    position: relative;
+    background-color: #F7F8ED;
+    height: 985px;
+    width: 2560px;
+    margin: 0;
+    padding: 0;
 }
 
 .thirdpage {
-  background-color: #F7F8ED;
-  height: 1910px;
-  width: 2560px;
-  margin: 0;
-  padding: 0;
-
+    position: relative;
+    background-color: #F7F8ED;
+    height: 1910px;
+    width: 2560px;
+    margin: 0;
+    padding: 0;
 }
 
-.fivehpage { 
-  background-color: #F7F8ED;
-  height: 1437px;
-  width: 2560px;
-  margin: 0;
-  padding: 0;
+.fivepage { 
+    position: relative;
+    background-color: #F7F8ED;
+    height: 1437px;
+    width: 2560px;
+    margin: 0;
+    padding: 0;
 
 }
 
 .sixpage {
-  background-color: #80A565;
-  height: 1616px;
-  width: 2560px;
-  margin: 0;
-  padding: 0;
+    position: relative;
+    background-color: #80A565;
+    height: 1616px;
+    width: 2560px;
+    margin: 0;
+    padding: 0;
 }
 
 .sevenpage {
-  background-color: #80A565;
-  height: 618px;
-  width: 2560px;
-  margin: 0;
-  padding: 0;
-}
+    position: relative;
+    background-color: #80A565;
+    height: 618px;
+    width: 2560px;
+    margin: 0;
+    padding: 0;
+} 
