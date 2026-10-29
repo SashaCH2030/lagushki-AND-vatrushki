@@ -14,16 +14,16 @@
         <h3 style="color: #EC5151;">лягушки-да-ватрушки</h3>
         <ul class="navig_list">
           <li>
-            <a class="navig_a" href="/">меню</a>
+            <a class="navig_a" href="#menu">меню</a>
           </li>
           <li>
-            <a class="navig_a" href="/">акции</a>
+            <a class="navig_a" href="#sale">акции</a>
           </li>
           <li>
-            <a class="navig_a" href="/">о нас</a>
+            <a class="navig_a" href="#about">о нас</a>
           </li>
           <li>
-            <a class="navig_a" href="/">мероприятия</a>
+            <a class="navig_a" href="#event">мероприятия</a>
           </li>
         </ul>
       </nav>
@@ -41,7 +41,7 @@
 по&nbsp;рецептам из&nbsp;тридевятого царства</p>
           </div>
           <div class="hero_button">
-            <a class="hero_button_a" href="/">Сделать заказ</a>
+            <a class="hero_button_a" href="#menu">Сделать заказ</a>
           </div>
         </div>
         <img class="red_star" src="img/redstar.svg" alt="">
@@ -77,7 +77,7 @@
 
     <!-- третий блок -->
      <section class="menu">
-      <div class="menu_container">
+      <div id="menu" class="menu_container">
         <div class="menu_content">
           <div class="menu_text">
             <h1 style="color: #EC5151;">меню выпечки</h1>
@@ -140,7 +140,7 @@
 
      <!-- четвёртый блок -->
       <section class="sale">
-        <div class="sale_container">
+        <div id="sale" class="sale_container">
           <div class="sale_content">
             <img class="whitestripe" src="img/stripewithcircles.svg" alt="">
             <div class="sale_row">
@@ -148,15 +148,15 @@
                 <div class="sale_frame_text">
                   <h2 style="color: #345630;"">Чудо-акция!</h2>
                   <p style="color: #345630;"">Возьми любой кофе, получи плюшку в подарок!</p>
-                  <img class="salefood" src="img/coffee.svg" alt="">
                 </div>
+                <img class="salefood" src="img/coffee.svg" alt="">
               </div>
               <div class="sale_frame">
                 <div class="sale_frame_text">
                   <h2 style="color: #345630;">Скидка 30%</h2>
                   <p style="color: #345630;"">скидка действует за час до закрытия</p>
-                  <img class="salefood" src="img/pie.svg" alt="">
                 </div>
+                <img class="salefood" src="img/pie.svg" alt="">
               </div>
             </div>
             <div class="sale_row">
@@ -169,22 +169,25 @@
                 <div class="sale_button">
                   <h3>выбрать</h3>
                 </div>
+                <div class="hidden">
+                  <img src="img/manyfrogs.svg" alt="">
+                </div>
               </div>
             </div>
-            <div class="hidden">
-              <img src="img/manyfrogs.svg" alt="">
-            </div>
           </div>
-          <img class="white_star" src="img/hite star.svg" alt="">
+          <img class="white_star" src="img/hitestar.svg" alt="">
         </div>
       </section>
+
       <section>
         <div class="uzor">
           <img class="uzor" src="img/uzor.svg" alt="">
         </div>
       </section>
+
+      <!-- пятый блок -->
       <section class="otzv">
-        <div class="otzv_container">
+        <div id="about" class="otzv_container">
           <div class="otzv_content">
             <div class="otzv_big">
               <div class="in_big_blue">
@@ -210,8 +213,10 @@
           </div>
         </div>
       </section>
+
+      <!-- шестой блок -->
       <section class="event">
-        <div class="event_container">
+        <div id="event" class="event_container">
           <div class="event_content">
             <div class="event_frame">
               <img src="img/window.svg" alt="">
@@ -243,9 +248,11 @@
           </div>
         </div>
       </section>
+
+      <!-- Подвал -->
       <footer class="foot">
         <div>
-          <img src="img/kva.svg" alt="">
+          <img class="beat" src="img/kva.svg" alt="">
           <div class="footer_text">
             <div class="left">
               <h3>БРИЦП261</h3>
