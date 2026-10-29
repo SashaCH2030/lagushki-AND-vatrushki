@@ -13,19 +13,62 @@ body {
 }
 
 .firstpage {
-    background-image: url('../img/bulki.svg');
+    background-image: url('../img/bulki2.svg');
+    /* background-position: 0 0; */
+    /* height: 1341px;
+    width: 2560px; */
+    margin: 0;
+    padding: 0;
+}
+
+.fourpage {
+    background-image: url('../img/waves.svg');
     background-position: 0 0;
-    height: 1341px;
+    height: 2722px;
     width: 2560px;
     margin: 0;
     padding: 0;
 }
 
-.fivepage {
-    background-image: url('../img/waves.svg');
-    background-position: 0 0;
-    height: 1341px;
-    width: 2722px;
-    margin: 0;
-    padding: 0;
+.secondpage {
+  background-color: #F7F8ED;
+  height: 985px;
+  width: 2560px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.thirdpage {
+  background-color: #F7F8ED;
+  height: 1910px;
+  width: 2560px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.fivehpage { 
+  background-color: #F7F8ED;
+  height: 1437px;
+  width: 2560px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.sixpage {
+  background-color: #80A565;
+  height: 1616px;
+  width: 2560px;
+  margin: 0;
+  padding: 0;
+}
+
+.sevenpage {
+  background-color: #80A565;
+  height: 618px;
+  width: 2560px;
+  margin: 0;
+  padding: 0;
 }
