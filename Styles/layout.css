@@ -359,8 +359,21 @@ a {
 .sale_test {
   display: flex;
   flex-direction: column;
-  gap: 37px;
+  padding-left: 0;
 
+}
+
+.sale_frog {
+  position: relative;
+  display: flex;
+  width: 861px;
+  height: 711px;
+  background-image: url('../img/frog\ and\ frame.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  justify-content: center;
+  z-index: 6;
 }
 
 .sale_button {
@@ -368,6 +381,7 @@ a {
   display: flex;
   width: 857px;
   height: 198px;
+  bottom: 200px;
   background-image: url('../img/red\ button.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -393,20 +407,7 @@ a {
 .sale_button:hover + .hidden {
   opacity: 1;
 }
- 
-.sale_frog {
-  position: relative;
-  display: flex;
-  width: 861px;
-  height: 711px;
-  background-image: url('../img/frog\ and\ frame.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  justify-content: center;
-  z-index: 6;
-  
-}
+
 
 .sale_frog_text {
   position: absolute;
