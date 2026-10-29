@@ -5,3 +5,18 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.firstpage {
+    background-image: url('../img/bulki.svg');
+    background-position: 0 0;
+    height: 1341px;
+    width: 2560px;
+    margin: 0;
+    padding: 0;
+}
